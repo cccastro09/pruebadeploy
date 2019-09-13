@@ -1,0 +1,19 @@
+
+
+/*para imagen de fondo*/
+body{
+	background: url("/images/fondo.jpg") no-repeat center center fixed;
+/*background-color: #BDBDBD;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Nutri Kids </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src = "https://code.jquery.com/jquery-1.7.2.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    
+      <script src="js/jquery.ui.touch-punch.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>   
+  <body>
+    
+      <audio id="myAudio">
+          <source src="audio/ganaste.mp3" type="audio/mpeg" preload="none" controls>
+        </audio>
+       
+
+      <nav class="navbar navbar-light" style="background-color: #FAD969;">
+        
+        <a class="navbar-brand" href="index.html">
+            <!-- <button type="button" class=" " > Nivel Nutricional  <span class="newPuntaje">0</span><span > % </span></button> -->
+          <img src="imagenes/logoDos.gif" width="250" height="100" alt="NutriKids">
+           
+        </a>
+      </nav>
+
+  
+
+<div class="fondo">
+<br><br>
+<audio src="audio/ganaste.mp3" autoplay loop></audio>
+
+
+               <div style="text-align: center" width="50%" >
+                    <a href="juego.html"> <img src="imagenes/premiacion.gif" width="50%"></a>
+              
+               </div>
+</div>
+<script type="text/javascript" >
+let urlParams = new URLSearchParams(location.search);
+            console.log(urlParams);
+            console.log("holaaaaaaaaa");
+            console.log(urlParams.get('score'));
+            let puntajeJuego = urlParams.get('score');
+            console.log("puntaje");
+            console.log(puntajeJuego);
+            $(".newPuntaje").text(puntajeJuego.toString())
+
+            
+</script>
+  </body>
+</html>
